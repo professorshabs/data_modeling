@@ -1,14 +1,15 @@
-#Data Modeling with PySpark and SQL Server
-##Overview
+# Data Modeling with PySpark and SQL Server
+
+## Overview
 This project focuses on using PySpark to process and transform data from CSV and Excel files, which are then loaded into a SQL Server database. The project is structured to run locally, with scripts for reading and writing data, SQL scripts for setting up database tables and views, and additional resources like an ER diagram and an Azure SQL database template.
 
-##Project Structure
+## Project Structure
 * `Jupyter Notebooks`: These notebooks contain PySpark scripts to read data from CSV and Excel files, process the data, and write it to a SQL Server database.
 * `SQL Scripts`: These scripts are used to create tables and views in the SQL Server database.
 * `Azure SQL Database Template`: A template for setting up an Azure SQL database.
 * `ER Diagram`: A visual representation of the database schema.
 
-##Notebooks Overview
+## Notebooks Overview
 
 ---
 1. Reading Excel Files:
@@ -26,17 +27,17 @@ This project focuses on using PySpark to process and transform data from CSV and
 
 - - The function write_to_sql(spark, spark_df, host_url, tb_name, user, pw) writes a Spark DataFrame to a SQL Server database using JDBC. It handles large datasets efficiently by partitioning the data and using batch inserts.
 ---
-##SQL Scripts
+## SQL Scripts
 * Table and View Creation: The SQL scripts in this project are used to create the necessary tables and views in the SQL Server database. These scripts should be run in sequence to ensure the database schema is set up correctly.
 
-##Azure SQL Database Template
+## Azure SQL Database Template
 Setup: This template provides a starting point for deploying your database on Azure SQL. It includes the necessary configurations and parameters to align with the project’s requirements.
 
-##ER Diagram
+## ER Diagram
 Database Schema: The ER diagram (.png file) visually represents the database schema, showing the relationships between different tables and views.
 ![](er_diagram.png)
-##Setup Instructions
-####Prerequisites
+## Setup Instructions
+#### Prerequisites
 - Python 3.x
 - Apache Spark (PySpark)
 - Jupyter Notebook (Lab)
