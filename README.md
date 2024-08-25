@@ -41,3 +41,24 @@ Database Schema: The ER diagram (.png file) visually represents the database sch
 - Apache Spark (PySpark)
 - Jupyter Notebook (Lab)
 - SQL Server (Local or Azure SQL Database)
+
+## Usage
+
+1. Clone the repository:
+
+```
+https://github.com/professorshabs/data_modeling.git
+cd data_modeling
+```
+
+2. Install the required dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+3. Start jupyter lab:
+
+```
+jupyter lab
+```
