@@ -1,20 +1,20 @@
 /****** Object:  Table [staging].[retailer_checkers]    Script Date: 6/20/2024 12:52:01 AM ******/
 
---create table retailers (
---retailer_sk INT IDENTITY(1,1),
---retailer_name varchar(30),
---full_name varchar(50),
---isactive bit
---);
---go
+create table retailers (
+retailer_sk INT IDENTITY(1,1),
+retailer_name varchar(30),
+full_name varchar(50),
+isactive bit
+);
+go
 
---insert into retailers
---values
---('Checkers', 'Checkers ZA', 1),
---('PNP', 'Pick n Pay', 1),
---('Spar', 'Spar', 1),
---('Woolworths', 'Woolworths Limited', 1);
---go
+insert into retailers
+values
+('Checkers', 'Checkers ZA', 1),
+('PNP', 'Pick n Pay', 1),
+('Spar', 'Spar', 1),
+('Woolworths', 'Woolworths Limited', 1);
+go
 
 CREATE TABLE [dbo].[fact_sales](
     year_month INT NOT NULL,
